@@ -1,0 +1,43 @@
+    /* Custom CSS untuk footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 6px;
+        background: var(--neutral-black, #263238);
+      }
+  
+      /* Gaya tambahan untuk logo */
+      .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .footer-logo {
+        margin-right: 7px; /* Menambahkan jarak antara logo dan teks */
+      }
+  
+      .awalan {
+        color: #FFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.921px; /* 92.809% */
+        margin: 0; /* Menghilangkan margin bawaan */
+      }
+  
+      /* Gaya ikon sosial media */
+      .social-icons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; /* Menambahkan jarak antara teks dan ikon */
+      }
+  
+      .social-icon {
+        margin-right: 10px; /* Menambahkan jarak antara ikon */
+        font-size: 20px; /* Menetapkan ukuran ikon */
+        color: #FFF; /* Warna ikon */
+      }

@@ -1,0 +1,334 @@
+    /* Mengubah font menjadi Inter */
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        /* Semi-bold */
+        font-size: 20px;
+        text-align: center;
+        /* Tengah */
+        color: #263238;
+        /* Warna */
+    }
+
+    h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        /* Semi-bold */
+        font-size: 13px;
+        text-align: center;
+        /* Tengah */
+        color: #4D4D4D;
+        /* Warna */
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        /* Semi-bold */
+        font-size: 11px;
+        text-align: center;
+        /* Tengah */
+        color: #4D4D4D;
+        /* Warna */
+    }
+
+    .container {
+        display: flex;
+        min-width: 100%;
+        height: 281px;
+        padding: 66.823px 100.234px;
+        align-items: center;
+        gap: 180px;
+        background: var(--neutral-silver, #F5F7FA);
+        overflow: hidden;
+        /* Mengatur overflow agar elips dapat muncul */
+        position: relative;
+        /* Mengatur posisi relatif untuk elemen-elips */
+    }
+
+    /* Mengatur lebar kontainer teks "Tentang Kami" di desktop */
+    .about-container {
+        max-width: 800px;
+        /* Sesuaikan dengan lebar yang Anda inginkan */
+        margin: 0 auto;
+        /* Tengahkan konten pada layar desktop */
+    }
+
+
+    /* CSS for small screens (e.g., mobile phones) */
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 20px;
+            /* Add some horizontal padding for small screens */
+        }
+
+        .slide-content {
+            padding: 20px;
+            /* Add padding around the content */
+            display: flex;
+            /* Use flexbox to control layout */
+            flex-direction: column;
+            /* Stack text vertically */
+            align-items: center;
+            /* Center align text horizontally */
+            text-align: center;
+            /* Center align text within each slide */
+        }
+
+        .elips-container {
+            text-align: center;
+            /* Center align the elips container */
+            margin-top: 20px;
+            /* Add some top margin for spacing */
+        }
+
+        /* Style each slide's title and content separately */
+        .slide-content h2 {
+            font-size: 24px;
+            /* Adjust font size for smaller screens */
+            margin-bottom: 10px;
+            /* Add spacing between title and content */
+        }
+
+        .slide-content p {
+            font-size: 16px;
+            /* Adjust font size for smaller screens */
+        }
+    }
+
+    /* Your existing CSS code */
+
+    /* Additional CSS for desktop view */
+    @media (min-width: 769px) {
+        .container {
+            max-width: 1200px;
+            /* Limit the maximum width of the container */
+            margin: 20px auto 0;
+            /* Adjust top margin to move the container upward */
+            padding: 40px;
+            /* Add some padding for spacing */
+        }
+
+        .slide-content {
+            display: flex;
+            /* Use flexbox for better alignment */
+            align-items: center;
+            /* Center align the content vertically */
+        }
+
+        .layout {
+            flex: 1;
+            /* Allow content to take up available space */
+            padding: 20px;
+            /* Add padding around the content */
+            text-align: center;
+            /* Center align text within each slide */
+        }
+
+        /* Style each slide's title and content separately */
+        .slide-content h2 {
+            font-size: 30px;
+            /* Increase font size for desktop */
+        }
+
+        .slide-content p {
+            font-size: 18px;
+            /* Increase font size for desktop */
+        }
+
+        /* Adjust the elips container's margin */
+        .elips-container {
+            margin-top: 0;
+            /* Remove top margin for desktop */
+        }
+
+        /* Adjust slide button size */
+        .slide-button {
+            font-size: 30px;
+        }
+    }
+
+
+    /* Gaya untuk elemen di dalam container */
+    .layout .brand {
+        color: #263238;
+        /* Warna untuk "SuitJobs" */
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 52.901px;
+        /* 118.75% */
+    }
+
+    .layout .description {
+        color: #2194F3;
+        /* Warna untuk "Platform Pencari Kerja yang Efektif dan Informatif" */
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 52.901px;
+        /* 118.75% */
+    }
+
+    .layout .content {
+        align-self: stretch;
+        color: var(--neutral-grey, #717171);
+        font-family: Inter;
+        font-size: 11.137px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16.706px;
+        /* 150% */
+        text-align: center;
+        /* Tengah */
+        margin-top: 20px;
+        /* Jarak atas */
+    }
+
+    /* Gaya untuk elemen elips */
+    .elips-container {
+        position: absolute;
+        bottom: 20px;
+        /* Jarak dari bawah */
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .elips {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--neutral-grey, #717171);
+        margin: 0 5px;
+        /* Jarak antara elips */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        /* Efek transisi */
+    }
+
+    /* Gaya untuk tombol slide aktif */
+    .elips.active {
+        background: #2194F3;
+        /* Warna aktif */
+    }
+
+    .slide-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        color: #2194F3;
+    }
+
+    .slide-button.left {
+        left: 20px;
+    }
+
+    .slide-button.right {
+        right: 20px;
+    }
+
+    .slide-content-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Gaya untuk konten slide 2 dan 3 */
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+        /* Semua slide awalnya disembunyikan */
+    }
+
+    .slide-content.active {
+        display: flex;
+        /* Menampilkan slide aktif */
+    }
+
+    .slide-content-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Gaya untuk konten slide 2 dan 3 */
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+        /* Semua slide awalnya disembunyikan */
+    }
+
+    .slide-content.active {
+        display: flex;
+        /* Menampilkan slide aktif */
+    }
+
+    /* Gaya untuk elips */
+    .elips {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--neutral-grey, #717171);
+        margin: 0 5px;
+        /* Jarak antara elips */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        /* Efek transisi */
+    }
+
+    /* Gaya untuk elips aktif */
+    .elips.active {
+        background: #2194F3;
+        /* Warna aktif */
+    }
+
+    /* CSS Anda yang sudah ada sebelumnya */
+
+    /* Gaya untuk bagian "Tentang Website Ini" */
+    .about-container {
+        background: #ffffff;
+        /* Warna latar belakang */
+        padding: 40px;
+        /* Ruang dalam container */
+        border-radius: 8px;
+        /* Sudut bulat */
+        margin-top: 20px;
+        /* Jarak dari container sebelumnya */
+    }
+
+    .about-container h2 {
+        font-size: 24px;
+        color: #263238;
+        /* Warna teks */
+        text-align: center;
+    }
+
+    .about-container p {
+        font-size: 16px;
+        color: #263238;
+        /* Warna teks */
+        margin-top: 15px;
+        /* Jarak antara paragraf */
+    }
+
+    .logo-perusahaan {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    

@@ -1,0 +1,204 @@
+/* Mengubah font menjadi Inter */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    /* Semi-bold */
+    font-size: 25px;
+    text-align: center;
+    /* Tengah */
+    color: #263238;
+    /* Warna */
+}
+
+.container {
+    min-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    background: var(--neutral-silver, #F5F7FA);
+}
+
+.card {
+    width: 360.617px;
+    height: 377px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.60);
+}
+
+.card-border {
+    width: 357.765px;
+    height: 234.663px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--neutral-black, #263238);
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    /* Tinggi gambar */
+    background-image: url('img/pdi.jpg');
+    background-size: cover;
+}
+
+h1 {
+    width: 353.918px;
+    height: 27.89px;
+    flex-shrink: 0;
+    color: var(--neutral-d-grey, #4D4D4D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 16.706px;
+    /* 55.686% */
+}
+
+.button-perusahaan {
+    display: flex;
+    width: 113.485px;
+    height: 49.048px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: var(--brand-info, #2194F3);
+}
+
+.button-perusahaan a {
+    color: white;
+    /* Warna default */
+    text-decoration: none;
+}
+
+.button-perusahaan a:hover {
+    color: #4D4D4D;
+    /* Warna saat dihover */
+}
+
+.detail {
+    color: var(--neutral-white, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    /* 96% */
+}
+
+/* CSS untuk popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Latar belakang transparan */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Z-index agar popup tampil di atas konten lain */
+}
+
+.popup-container {
+    display: flex;
+    min-width: 50%;
+    padding: 36px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--stroke-light, #DEE2E6);
+    background: var(--gray-white, #FFF);
+    /* Shadow / Small */
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Tombol untuk menutup popup */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    /* Tambahkan padding untuk membuat tombol lebih jelas */
+    background-color: #007bff;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks tombol */
+    border: none;
+    border-radius: 4px;
+}
+
+.border1 {
+    display: flex;
+    width: 20   0px;
+    height: 44px;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--dark-medium, #4F4F4F);
+    background: var(--White, #FFF);
+}
+
+.button1 {
+    color: var(--dark-medium, #4F4F4F);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button1 a {
+    color: #4F4F4F;
+    /* Warna default */
+    text-decoration: none;
+}
+
+.button1 a:hover {
+    color: #007bff;
+    /* Warna saat dihover */
+}
+
+ /* Tambahkan CSS tambahan jika diperlukan */
+
+    /* CSS untuk tampilan desktop */
+    @media (min-width: 768px) {
+        /* Ganti ukuran kolom dan card sesuai kebutuhan */
+        .col-md-3 {
+            flex-basis: 25%;
+        }
+    }
+
+    /* CSS untuk tampilan mobile */
+    @media (max-width: 767px) {
+        /* Ganti tata letak dan ukuran sesuai kebutuhan */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .col-md-3 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card {
+            text-align: center;
+        }
+    }

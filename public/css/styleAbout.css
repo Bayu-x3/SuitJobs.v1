@@ -1,0 +1,39 @@
+/* Mengubah font menjadi Inter */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 36px; /* Ukuran yang lebih besar */
+    text-align: center; /* Tengah */
+    color: #263238; /* Warna */
+    margin-top: 30px; /* Menambahkan ruang di atas judul */
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 24px; /* Ukuran yang lebih besar */
+    text-align: center; /* Tengah */
+    color: #4D4D4D; /* Warna */
+    margin-top: 20px; /* Menambahkan ruang di atas subjudul */
+}
+
+/* Gaya untuk konten "Tentang Kami" */
+.about-content {
+    max-width: 1300px; /* Batasi lebar konten */
+    margin: 0 auto; /* Tengahkan konten */
+    padding: 20px; /* Berikan ruang di sekitar konten */
+    text-align: justify; /* Justifikasi teks */
+    line-height: 1.6; /* Spasi antar baris yang baik */
+    background-color: #F5F5F5; /* Warna latar belakang */
+    border-radius: 10px; /* Tampilan sudut bulat */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Gaya untuk gambar */
+.about-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Menambahkan ruang di sekitar gambar */
+}
+    
